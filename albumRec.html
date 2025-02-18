@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
     <script>
         //function to get a random number between 1 to 10
-        //each numbere corresponds with an album
+        //each number corresponds with an album
         function getRandom(){
            return Math.floor(Math.random() * 10) + 1;
         }
-
+        //array containg the album names
+        const albumArray = ["Imaginal Disk", 
+        "Once Twice Melody",
+        "Soft Sounds From Another Planet",
+        "Blonde",
+        "Coastal Grooves",
+        "Depression Cherry",
+        "The Velvet Undergound and Nico",
+        "DYKTTATUOB",
+        "Abyss",
+        "Beach House"
+       ];
+       let number = 0;
+       function whichAlbum(){
+        number = getRandom();
+        return albumArray[number - 1];
+       }
+     
     </script>
+<body>
     <h3>Random Album Recommendation</h3>
-    <p>Click the buttom to generate a random album suggestion.
-    You can choose to filter by artist or genre, but you don't need to.
+    <p>Click the buttom to generate a random album suggestion.</p>
     
-    </p>
 </body>
+</head>
 </html>
